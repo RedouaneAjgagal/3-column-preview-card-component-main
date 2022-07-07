@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #f1f1f1;
+}
+p{
+    color: #ebebeb;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 300;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 1rem;
+}
+.card-sedans{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 0.75rem 0 0 0.75rem;
+    max-width: 20rem;
+}
+.card-suvs{
+    background-color: hsl(184, 100%, 22%);
+    max-width: 20rem;
+}
+.card-luxury{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 0.75rem 0.75rem 0;
+    max-width: 20rem;
+}
+.card-content{
+    padding: 4rem 3rem;
+}
+.card-content h1{
+    color: #ffffff;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 1.5px;
+    padding: 1.5rem 0;
+    text-transform: uppercase;
+}
+.card-content p{
+    margin-bottom: 4rem;
+    line-height: 1.6;
+}
+.card-content a{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 3rem;
+    padding: 0.85rem 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    transition: .2s;
+}
+.card-content a:hover{
+    background-color: hsl(0, 0%, 87%);
+}
+.card-sedans a {
+    color: hsl(31, 77%, 52%);;
+}
+.card-suvs a {
+    color: hsl(184, 100%, 22%);
+}
+.card-luxury a {
+    color: hsl(179, 100%, 13%);
+}
+@media(max-width:994px) {
+    .container {
+        display: grid;
+        padding: 2rem 0.75rem;
+    }
+    .card-sedans {
+        border-radius: 0.75rem 0.75rem 0 0;
+        max-width: 22rem;
+    }
+    .card-suvs {
+        max-width: 22rem;
+    }
+    .card-luxury {
+        border-radius: 0 0 0.75rem 0.75rem;
+        max-width: 22rem;
+    }
+}
